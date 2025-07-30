@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "backend": "json-server -w data/db.json"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "json-server": "^0.17.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
