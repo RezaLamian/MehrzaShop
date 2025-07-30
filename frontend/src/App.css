@@ -1,0 +1,115 @@
+/* Start Default Styles */
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  direction: rtl;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+body * {
+  @apply transition-colors duration-100;
+}
+
+*,
+*::after,
+*::before {
+  outline: none;
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: #464749;
+  transition: all 400ms ease;
+}
+
+a:hover {
+  color: #cb1a42;
+}
+
+i {
+  user-select: none;
+}
+
+.dots {
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
+}
+
+.dot {
+  border: none;
+  width: 10px;
+  height: 10px;
+  background: #c5c5c5;
+  border-radius: 50%;
+  margin: 0 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.dot:focus {
+  outline: none;
+}
+
+.dot.active {
+  background: rgb(56, 214, 56);
+}
+
+.arrow {
+  width: 35px;
+  height: 35px;
+  border: 1px solid gray;
+  border-radius: 100%;
+  background-color: #fff;
+  padding: 1rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  fill: gray;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.arrow--left {
+  left: 5px;
+}
+
+.arrow--right {
+  left: auto;
+  right: 5px;
+}
+
+.arrow--disabled {
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.others:hover .others-menu {
+  opacity: 1;
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+}
+
+.categories:hover .mega-menu {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.hidden-navbar {
+  display: none;
+}
+
+.sidebar-link.active {
+  color: #cb1a42 !important;
+  transition: none !important;
+}
